@@ -1,0 +1,82 @@
+// Italian copy (home page, navigation and footer). The tool pages and legal pages exist in Spanish and English only.
+export default {
+  dir: 'ltr',
+  summary: '{app} è un\'app per iPhone e iPad per i proprietari che affittano immobili: affitto tradizionale, a stanze e transitorio. Segue gli incassi per inquilino e per mese, le spese con le scadenze, il riepilogo di entrate e utile, le ricevute d\'affitto in PDF, l\'aggiornamento annuale del canone con l\'IRAV o l\'IPC, il deposito cauzionale e una scheda Fisco per l\'imposta sul reddito spagnola (ammortamento del 3 %, riduzioni dal 50 % al 90 %, reddito imputato per i giorni non affittati). I dati restano sul dispositivo; la sincronizzazione con iCloud è facoltativa. Nove lingue. Gratuita fino a 3 immobili, con pubblicità; l\'abbonamento mensile elimina il limite e la pubblicità. Non è ancora sull\'App Store. Strumento informativo, non consulenza fiscale né legale.',
+  llms: { app: 'L\'app', tools: 'Strumenti gratuiti', legal: 'Note legali e assistenza', other: 'Altre lingue', store: 'App Store' },
+  featureList: ['Incassi per inquilino e per mese, con i mancati pagamenti in evidenza', 'Spese con scadenze e segno di pagato', 'Riepilogo mensile, trimestrale e annuale', 'Ricevute d\'affitto in PDF (art. 17.4 LAU)', 'Aggiornamento del canone con IRAV o IPC e lettera di comunicazione', 'Scheda Fisco per l\'imposta spagnola: ammortamento, riduzioni e reddito imputato', 'Widget degli incassi del mese', 'Dati sul dispositivo e sincronizzazione iCloud facoltativa', 'Nove lingue'],
+  ui: {
+    skip: 'Vai al contenuto',
+    nav: { app: 'L\'app', plans: 'Piani', faq: 'Domande' },
+    langLabel: 'Lingua',
+    soon: 'Presto sull\'App Store',
+    soonShort: 'Presto',
+    seeApp: "Vedi l'app",
+    download: 'Scarica dall\'App Store',
+    downloadShort: 'Scarica',
+    updated: 'Aggiornato',
+    cta: { text: 'Gli stessi conti, con i tuoi immobili e inquilini salvati, sul tuo iPhone.' },
+    footer: {
+      project: 'Un\'app per i proprietari di immobili in affitto. I tuoi dati restano sul tuo dispositivo.',
+      publisher: 'Editore', legal: 'Note legali', privacy: 'Privacy', terms: 'Termini', support: 'Assistenza', languages: 'Lingue',
+      disclaimer: '{app} è uno strumento informativo. Le cifre dipendono da ciò che inserisci e dalle norme in vigore ogni anno; non sono consulenza fiscale né legale. Conferma sempre con l\'Agenzia delle Entrate spagnola o con il tuo consulente.',
+    },
+  },
+  home: {
+    meta: {
+      title: '{app}: app per proprietari, incassi e tasse sugli affitti',
+      description: 'Un\'app per iPhone per i proprietari: vedi chi ha pagato, segui le spese di ogni immobile, emetti ricevute d\'affitto e ottieni le cifre per la dichiarazione dei redditi spagnola.',
+    },
+    h1: 'App per proprietari: chi ha pagato e cosa dichiarare.',
+    lede: '{app} riunisce gli incassi del mese, le spese, le ricevute in PDF e i numeri fiscali dei tuoi affitti.',
+    caption: 'Il percorso di un proprietario, ripreso nel simulatore iOS con il portafoglio di esempio dell\'app.',
+    gifAlt: 'Percorso nell\'app: il riepilogo del mese, gli incassi di ogni inquilino con un mancato pagamento segnalato, la matrice dell\'anno, una ricevuta d\'affitto e la scheda Fisco.',
+    app: {
+      title: 'L\'app, schermata per schermata',
+      lede: 'Otto schermate reali, riprese nel simulatore iOS con il portafoglio di esempio dell\'app. Immobili, inquilini e importi sono fittizi.',
+      views: [
+        { file: 'summary', caption: 'Riepilogo del mese', alt: 'Schermata Riepilogo con l\'utile netto del mese, l\'incassato, le spese e il sospeso' },
+        { file: 'chart', caption: 'Entrate e spese', alt: 'Grafico mensile a barre delle entrate incassate e delle spese, e occupazione per immobile' },
+        { file: 'homes', caption: 'Immobili e stanze', alt: 'Elenco di immobili con una casella per stanza: incassata o non pagata' },
+        { file: 'collections', caption: 'Incassi del mese', alt: 'Elenco di inquilini con l\'importo incassato e la data, e i mancati pagamenti in rosso' },
+        { file: 'year', caption: 'L\'anno in una matrice', alt: 'Matrice di dodici mesi per inquilino con ogni incasso spuntato' },
+        { file: 'receipt', caption: 'Ricevuta d\'affitto in PDF', alt: 'Anteprima di una ricevuta d\'affitto con canone e spese su righe separate' },
+        { file: 'expenses', caption: 'Spese e scadenze', alt: 'Spese del mese con il pagato, il sospeso e lo scaduto' },
+        { file: 'tax', caption: 'Fisco: rendimento netto ridotto', alt: 'Scheda Fisco con entrate, spese deducibili, ammortamento, riduzione e rendimento netto ridotto' },
+      ],
+    },
+    ledger: {
+      title: 'L\'affitto di ogni mese, con un tocco.',
+      text: 'Spunta ogni incasso e ciò che manca resta in vista, per inquilino e per stanza. L\'anno intero sta in una matrice di dodici mesi.',
+      alt: 'Matrice annuale degli incassi: una riga per inquilino e una colonna per mese, con le caselle pagate spuntate',
+    },
+    tax: {
+      title: 'La dichiarazione degli affitti, calcolata.',
+      text: 'La scheda Fisco somma le entrate, sottrae le spese deducibili e l\'ammortamento del 3 %, applica la riduzione di ogni contratto (50 % o 60 % secondo la data, 70 % o 90 % dove previsto) e mostra il rendimento netto ridotto. Imputa anche un reddito per i giorni non affittati.',
+      note: 'Segue le norme spagnole sull\'imposta sul reddito. È uno strumento informativo: conferma le cifre con l\'Agenzia delle Entrate spagnola o con il tuo consulente.',
+      alt: 'Scheda Fisco con il rendimento netto ridotto dell\'anno e il dettaglio di entrate, spese e riduzioni',
+    },
+    plans: {
+      title: 'Che cosa è gratis e che cosa include l\'abbonamento',
+      lede: 'Due piani e nessun acquisto singolo.',
+      rows: [
+        ['Gratis', 'Fino a 3 immobili con le loro stanze, incassi, spese, Riepilogo, widget, copia di sicurezza su file e rendimento netto in Fisco. Con pubblicità.'],
+        ['{app} Cloud, abbonamento mensile', 'Immobili illimitati, dati di gestore e contratto, aggiornamento con IRAV o IPC e lettera, ricevute PDF, ammortamento e riduzioni in Fisco, esportazione PDF e CSV, avvisi, senza pubblicità e sincronizzazione iCloud. Il prezzo sarà mostrato sull\'App Store.'],
+        ['I tuoi dati', 'Sono salvati sul tuo dispositivo. La sincronizzazione iCloud è facoltativa e usa il tuo account iCloud: non esiste un nostro server.'],
+      ],
+    },
+    faq: {
+      title: 'Domande frequenti',
+      items: [
+        ['Che cos\'è {app}?', '{app} è un\'app per iPhone e iPad per i proprietari che affittano immobili. Segue gli incassi per inquilino e per mese, le spese, le ricevute d\'affitto in PDF, l\'aggiornamento del canone e le cifre della dichiarazione dei redditi.'],
+        ['A chi è destinata?', 'Al piccolo proprietario, da uno a dieci immobili, con affitto tradizionale, a stanze o transitorio. Non è per gli affitti turistici.'],
+        ['Quanto costa?', 'Il download è gratuito e consente fino a 3 immobili, con pubblicità. L\'abbonamento mensile elimina il limite e la pubblicità e aggiunge le funzioni avanzate. Il prezzo sarà mostrato sull\'App Store; non c\'è un acquisto singolo.'],
+        ['Dove sono salvati i miei dati?', 'Sul tuo dispositivo. La sincronizzazione iCloud è facoltativa e usa il tuo account iCloud, non un nostro server. Puoi anche salvare una copia di sicurezza su file.'],
+        ['Funziona fuori dalla Spagna?', 'L\'app è in nove lingue e incassi, spese, ricevute e riepilogo valgono in qualsiasi paese. La scheda Fisco segue le regole spagnole dell\'imposta sul reddito.'],
+        ['Calcola la mia dichiarazione dei redditi?', 'Calcola le cifre del rendimento di ogni immobile con le norme spagnole. Non presenta la dichiarazione e non sostituisce un consulente: conferma i dati con l\'Agenzia delle Entrate spagnola.'],
+        ['Emette ricevute d\'affitto?', 'Sì. Crea una ricevuta PDF con il canone e le spese su righe separate, come richiede l\'articolo 17.4 della legge spagnola sulle locazioni urbane. È inclusa nell\'abbonamento.'],
+        ['Quando sarà sull\'App Store?', 'Non è ancora pubblicata. Quando lo sarà, questa pagina avrà il link per scaricarla.'],
+      ],
+    },
+    close: { title: 'I tuoi affitti, in ordine.', lede: 'Non è ancora sull\'App Store.' },
+  },
+};

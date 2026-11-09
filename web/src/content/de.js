@@ -1,0 +1,82 @@
+// German copy (home page, navigation and footer). The tool pages and legal pages exist in Spanish and English only.
+export default {
+  dir: 'ltr',
+  summary: '{app} ist eine App für iPhone und iPad für Vermieter: klassische Vermietung, Zimmervermietung und befristete Verträge. Sie verfolgt die Zahlungen pro Mieter und Monat, die Ausgaben mit Fälligkeiten, die Übersicht über Einnahmen und Gewinn, Mietquittungen als PDF, die jährliche Mietanpassung mit dem IRAV oder dem IPC, die Kaution und einen Steuer-Reiter für die spanische Einkommensteuer (3 % Abschreibung, Ermäßigungen von 50 % bis 90 %, Ertragsansatz für Leerstandstage). Die Daten bleiben auf dem Gerät; die iCloud-Synchronisierung ist optional. Neun Sprachen. Kostenlos bis zu 3 Wohnungen, mit Werbung; das Monatsabo hebt das Limit und die Werbung auf. Sie ist noch nicht im App Store. Informationswerkzeug, keine Steuer- oder Rechtsberatung.',
+  llms: { app: 'Die App', tools: 'Kostenlose Werkzeuge', legal: 'Rechtliches und Support', other: 'Weitere Sprachen', store: 'App Store' },
+  featureList: ['Zahlungen pro Mieter und Monat, offene Mieten im Blick', 'Ausgaben mit Fälligkeiten und Bezahlt-Markierung', 'Monats-, Quartals- und Jahresübersicht', 'Mietquittungen als PDF (Art. 17.4 LAU)', 'Mietanpassung mit IRAV oder IPC und Mitteilungsschreiben', 'Steuer-Reiter für die spanische Einkommensteuer: Abschreibung, Ermäßigungen und Ertragsansatz', 'Widget der Zahlungen des Monats', 'Daten auf dem Gerät und optionale iCloud-Synchronisierung', 'Neun Sprachen'],
+  ui: {
+    skip: 'Zum Inhalt springen',
+    nav: { app: 'Die App', plans: 'Tarife', faq: 'Fragen' },
+    langLabel: 'Sprache',
+    soon: 'Bald im App Store',
+    soonShort: 'Bald',
+    seeApp: 'App ansehen',
+    download: 'Im App Store laden',
+    downloadShort: 'Laden',
+    updated: 'Aktualisiert',
+    cta: { text: 'Dieselben Rechnungen, mit Ihren gespeicherten Wohnungen und Mietern, auf Ihrem iPhone.' },
+    footer: {
+      project: 'Eine App für Vermieter. Ihre Daten bleiben auf Ihrem Gerät.',
+      publisher: 'Herausgeber', legal: 'Rechtliches', privacy: 'Datenschutz', terms: 'Bedingungen', support: 'Support', languages: 'Sprachen',
+      disclaimer: '{app} ist ein Informationswerkzeug. Die Zahlen hängen von Ihren Eingaben und den jeweils geltenden Regeln ab; sie sind keine Steuer- oder Rechtsberatung. Bestätigen Sie sie immer bei der spanischen Steuerbehörde oder Ihrem Berater.',
+    },
+  },
+  home: {
+    meta: {
+      title: '{app}: Vermieter-App für Mieteingänge und Steuern',
+      description: 'Eine iPhone-App für Vermieter: sehen, wer gezahlt hat, die Ausgaben jeder Wohnung verfolgen, Mietquittungen erstellen und die Zahlen für die spanische Steuererklärung erhalten.',
+    },
+    h1: 'App für Vermieter: wer gezahlt hat und was zu erklären ist.',
+    lede: '{app} bündelt die Zahlungen des Monats, Ausgaben, PDF-Quittungen und die Steuerzahlen Ihrer Vermietung.',
+    caption: 'Der Weg eines Vermieters, aufgenommen im iOS-Simulator mit dem Beispielportfolio der App.',
+    gifAlt: 'Rundgang durch die App: die Monatsübersicht, die Zahlungen jedes Mieters mit einer markierten offenen Miete, die Jahresmatrix, eine Mietquittung und der Steuer-Reiter.',
+    app: {
+      title: 'Die App, Bildschirm für Bildschirm',
+      lede: 'Acht echte Bildschirme, aufgenommen im iOS-Simulator mit dem Beispielportfolio der App. Wohnungen, Mieter und Beträge sind erfunden.',
+      views: [
+        { file: 'summary', caption: 'Übersicht des Monats', alt: 'Übersicht mit dem Nettogewinn des Monats, dem Eingenommenen, den Ausgaben und dem Offenen' },
+        { file: 'chart', caption: 'Einnahmen und Ausgaben', alt: 'Monatliches Balkendiagramm der eingenommenen Mieten und der Ausgaben sowie Belegung je Wohnung' },
+        { file: 'homes', caption: 'Wohnungen und Zimmer', alt: 'Liste von Wohnungen mit einem Feld je Zimmer: bezahlt oder offen' },
+        { file: 'collections', caption: 'Zahlungen des Monats', alt: 'Liste von Mietern mit Betrag und Datum, offene Mieten rot markiert' },
+        { file: 'year', caption: 'Das Jahr in einer Matrix', alt: 'Zwölf-Monats-Matrix je Mieter mit jeder Zahlung abgehakt' },
+        { file: 'receipt', caption: 'Mietquittung als PDF', alt: 'Vorschau einer Mietquittung mit Miete und Nebenkosten in getrennten Zeilen' },
+        { file: 'expenses', caption: 'Ausgaben und Fälligkeiten', alt: 'Ausgaben des Monats mit Bezahltem, Offenem und Überfälligem' },
+        { file: 'tax', caption: 'Steuern: reduzierter Nettoertrag', alt: 'Steuer-Reiter mit Einnahmen, abzugsfähigen Ausgaben, Abschreibung, Ermäßigung und reduziertem Nettoertrag' },
+      ],
+    },
+    ledger: {
+      title: 'Die Miete jedes Monats, mit einem Tipp.',
+      text: 'Haken Sie jede Zahlung ab, und was fehlt, bleibt sichtbar, je Mieter und je Zimmer. Das ganze Jahr passt in eine Matrix aus zwölf Monaten.',
+      alt: 'Jahresmatrix der Zahlungen: eine Zeile je Mieter und eine Spalte je Monat, bezahlte Felder abgehakt',
+    },
+    tax: {
+      title: 'Die Steuer auf die Mieten, berechnet.',
+      text: 'Der Steuer-Reiter addiert die Einnahmen, zieht die abzugsfähigen Ausgaben und die Abschreibung von 3 % ab, wendet die Ermäßigung jedes Vertrags an (50 % oder 60 % je nach Datum, 70 % oder 90 % wo sie gelten) und zeigt den reduzierten Nettoertrag. Für Leerstandstage setzt er außerdem einen Ertrag an.',
+      note: 'Er folgt den spanischen Einkommensteuerregeln. Es ist ein Informationswerkzeug: Bestätigen Sie die Zahlen bei der spanischen Steuerbehörde oder Ihrem Berater.',
+      alt: 'Steuer-Reiter mit dem reduzierten Nettoertrag des Jahres und der Aufschlüsselung von Einnahmen, Ausgaben und Ermäßigungen',
+    },
+    plans: {
+      title: 'Was kostenlos ist und was das Abo enthält',
+      lede: 'Zwei Tarife und kein Einmalkauf.',
+      rows: [
+        ['Kostenlos', 'Bis zu 3 Wohnungen mit ihren Zimmern, Zahlungen, Ausgaben, Übersicht, Widget, Sicherung in einer Datei und Nettoertrag im Steuer-Reiter. Mit Werbung.'],
+        ['{app} Cloud, Monatsabo', 'Unbegrenzt viele Wohnungen, Daten zu Verwalter und Vertrag, Mietanpassung mit IRAV oder IPC samt Schreiben, PDF-Quittungen, Abschreibung und Ermäßigungen bei den Steuern, PDF- und CSV-Export, Hinweise, keine Werbung und iCloud-Synchronisierung. Der Preis wird im App Store angezeigt.'],
+        ['Ihre Daten', 'Sie liegen auf Ihrem Gerät. Die iCloud-Synchronisierung ist optional und nutzt Ihr eigenes iCloud-Konto: Wir betreiben keinen Server.'],
+      ],
+    },
+    faq: {
+      title: 'Häufige Fragen',
+      items: [
+        ['Was ist {app}?', '{app} ist eine App für iPhone und iPad für Vermieter. Sie verfolgt die Zahlungen pro Mieter und Monat, Ausgaben, Mietquittungen als PDF, die Mietanpassung und die Zahlen für die Steuererklärung.'],
+        ['Für wen ist sie gedacht?', 'Für den Kleinvermieter mit einer bis zehn Wohnungen, mit klassischer Vermietung, Zimmervermietung oder befristeten Verträgen. Für Ferienvermietung ist sie nicht gedacht.'],
+        ['Was kostet sie?', 'Der Download ist kostenlos und erlaubt bis zu 3 Wohnungen, mit Werbung. Das Monatsabo hebt das Limit und die Werbung auf und fügt die erweiterten Funktionen hinzu. Der Preis wird im App Store angezeigt; es gibt keinen Einmalkauf.'],
+        ['Wo werden meine Daten gespeichert?', 'Auf Ihrem Gerät. Die iCloud-Synchronisierung ist optional und läuft über Ihr iCloud-Konto, nicht über einen Server von uns. Sie können auch eine Sicherung in einer Datei speichern.'],
+        ['Funktioniert sie außerhalb Spaniens?', 'Die App gibt es in neun Sprachen, und Zahlungen, Ausgaben, Quittungen und Übersicht gelten in jedem Land. Der Steuer-Reiter folgt den spanischen Einkommensteuerregeln.'],
+        ['Berechnet sie meine Steuererklärung?', 'Sie berechnet die Ertragszahlen jeder Wohnung nach spanischen Regeln. Sie reicht die Erklärung nicht ein und ersetzt keinen Berater: Bestätigen Sie die Zahlen bei der spanischen Steuerbehörde.'],
+        ['Erstellt sie Mietquittungen?', 'Ja. Sie erzeugt eine PDF-Quittung mit Miete und Nebenkosten in getrennten Zeilen, wie es Artikel 17.4 des spanischen Mietgesetzes verlangt. Sie ist im Abo enthalten.'],
+        ['Wann kommt sie in den App Store?', 'Sie ist noch nicht veröffentlicht. Sobald sie es ist, trägt diese Seite den Download-Link.'],
+      ],
+    },
+    close: { title: 'Ihre Vermietung, in Ordnung.', lede: 'Sie ist noch nicht im App Store.' },
+  },
+};

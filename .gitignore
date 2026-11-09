@@ -1,0 +1,15 @@
+# macOS / Xcode
+Pods/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+build/
+DerivedData/
+
+# Website and tooling
+node_modules/
+web/dist/
+web/dist-ssr/
+marketing/gif/
+.playwright-mcp/
+.claude/

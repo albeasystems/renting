@@ -1,0 +1,82 @@
+// French copy (home page, navigation and footer). The tool pages and legal pages exist in Spanish and English only.
+export default {
+  dir: 'ltr',
+  summary: '{app} est une application iPhone et iPad pour les propriétaires qui louent des logements : location classique, par chambre et saisonnière. Elle suit les encaissements par locataire et par mois, les dépenses et leurs échéances, le résumé des revenus et du bénéfice, les quittances de loyer en PDF, la révision annuelle du loyer avec l\'IRAV ou l\'IPC, le dépôt de garantie et un onglet Fiscal pour l\'impôt sur le revenu espagnol (amortissement de 3 %, réductions de 50 % à 90 %, revenu imputé pour les jours non loués). Les données restent sur l\'appareil ; la synchronisation iCloud est facultative. Neuf langues. Gratuite jusqu\'à 3 logements, avec publicités ; l\'abonnement mensuel supprime la limite et les publicités. Elle n\'est pas encore sur l\'App Store. Outil informatif, pas un conseil fiscal ni juridique.',
+  llms: { app: 'L\'application', tools: 'Outils gratuits', legal: 'Mentions légales et assistance', other: 'Autres langues', store: 'App Store' },
+  featureList: ['Encaissements par locataire et par mois, avec les impayés en vue', 'Dépenses avec échéances et suivi du paiement', 'Résumé mensuel, trimestriel et annuel', 'Quittances de loyer en PDF (art. 17.4 LAU)', 'Révision du loyer avec l\'IRAV ou l\'IPC et lettre de notification', 'Onglet Fiscal pour l\'impôt espagnol : amortissement, réductions et revenu imputé', 'Widget des encaissements du mois', 'Données sur l\'appareil et synchronisation iCloud facultative', 'Neuf langues'],
+  ui: {
+    skip: 'Aller au contenu',
+    nav: { app: 'L\'application', plans: 'Formules', faq: 'Questions' },
+    langLabel: 'Langue',
+    soon: 'Bientôt sur l\'App Store',
+    soonShort: 'Bientôt',
+    seeApp: "Voir l'application",
+    download: 'Télécharger sur l\'App Store',
+    downloadShort: 'Télécharger',
+    updated: 'Mis à jour',
+    cta: { text: 'Les mêmes calculs, avec vos logements et vos locataires enregistrés, sur votre iPhone.' },
+    footer: {
+      project: 'Une application pour les propriétaires de logements en location. Vos données restent sur votre appareil.',
+      publisher: 'Éditeur', legal: 'Mentions légales', privacy: 'Confidentialité', terms: 'Conditions', support: 'Assistance', languages: 'Langues',
+      disclaimer: '{app} est un outil informatif. Les chiffres dépendent de ce que vous saisissez et des règles en vigueur chaque année ; ils ne constituent pas un conseil fiscal ni juridique. Confirmez toujours auprès de l\'administration fiscale espagnole ou de votre conseiller.',
+    },
+  },
+  home: {
+    meta: {
+      title: '{app} : application pour propriétaires, loyers et impôts',
+      description: 'Une application iPhone pour les propriétaires : voyez qui a payé, suivez les dépenses de chaque logement, éditez des quittances de loyer et obtenez les chiffres de la déclaration d\'impôts espagnole.',
+    },
+    h1: 'Application pour propriétaires : qui a payé et quoi déclarer.',
+    lede: '{app} réunit les encaissements du mois, les dépenses, les quittances PDF et les chiffres fiscaux de vos locations.',
+    caption: 'Le parcours d\'un propriétaire, capturé dans le simulateur iOS avec le portefeuille d\'exemple de l\'application.',
+    gifAlt: 'Parcours dans l\'application : le résumé du mois, les encaissements de chaque locataire avec un impayé signalé, la matrice de l\'année, une quittance de loyer et l\'onglet Fiscal.',
+    app: {
+      title: 'L\'application, écran par écran',
+      lede: 'Huit écrans réels, capturés dans le simulateur iOS avec le portefeuille d\'exemple de l\'application. Les logements, les locataires et les montants sont fictifs.',
+      views: [
+        { file: 'summary', caption: 'Résumé du mois', alt: 'Écran Résumé avec le bénéfice net du mois, ce qui est encaissé, les dépenses et ce qui reste à payer' },
+        { file: 'chart', caption: 'Revenus et dépenses', alt: 'Graphique mensuel en barres des revenus encaissés et des dépenses, et occupation par logement' },
+        { file: 'homes', caption: 'Logements et chambres', alt: 'Liste de logements avec une case par chambre : encaissée ou impayée' },
+        { file: 'collections', caption: 'Encaissements du mois', alt: 'Liste de locataires avec le montant encaissé et la date, et les impayés en rouge' },
+        { file: 'year', caption: 'L\'année en une matrice', alt: 'Matrice de douze mois par locataire avec chaque encaissement coché' },
+        { file: 'receipt', caption: 'Quittance de loyer en PDF', alt: 'Aperçu d\'une quittance de loyer avec le loyer et les charges sur des lignes séparées' },
+        { file: 'expenses', caption: 'Dépenses et échéances', alt: 'Dépenses du mois avec ce qui est payé, ce qui reste et ce qui est en retard' },
+        { file: 'tax', caption: 'Fiscal : rendement net réduit', alt: 'Onglet Fiscal avec revenus, dépenses déductibles, amortissement, réduction et rendement net réduit' },
+      ],
+    },
+    ledger: {
+      title: 'Le loyer de chaque mois, d\'un geste.',
+      text: 'Cochez chaque encaissement et ce qui manque reste visible, par locataire et par chambre. Toute l\'année tient dans une matrice de douze mois.',
+      alt: 'Matrice annuelle des encaissements : une ligne par locataire et une colonne par mois, avec les cases payées cochées',
+    },
+    tax: {
+      title: 'La déclaration locative, calculée.',
+      text: 'L\'onglet Fiscal additionne les revenus, retire les dépenses déductibles et l\'amortissement de 3 %, applique la réduction de chaque contrat (50 % ou 60 % selon la date, 70 % ou 90 % lorsqu\'elles s\'appliquent) et affiche le rendement net réduit. Il impute aussi un revenu pour les jours non loués.',
+      note: 'Il suit les règles de l\'impôt sur le revenu espagnol. C\'est un outil informatif : confirmez les chiffres auprès de l\'administration fiscale espagnole ou de votre conseiller.',
+      alt: 'Onglet Fiscal avec le rendement net réduit de l\'année et le détail des revenus, dépenses et réductions',
+    },
+    plans: {
+      title: 'Ce qui est gratuit et ce que comprend l\'abonnement',
+      lede: 'Deux formules et aucun achat unique.',
+      rows: [
+        ['Gratuit', 'Jusqu\'à 3 logements avec leurs chambres, encaissements, dépenses, Résumé, widget, sauvegarde dans un fichier et rendement net dans Fiscal. Avec publicités.'],
+        ['{app} Cloud, abonnement mensuel', 'Logements illimités, données du gestionnaire et du contrat, révision avec l\'IRAV ou l\'IPC et lettre, quittances PDF, amortissement et réductions dans Fiscal, export PDF et CSV, alertes, sans publicité et synchronisation iCloud. Le prix sera affiché sur l\'App Store.'],
+        ['Vos données', 'Elles sont stockées sur votre appareil. La synchronisation iCloud est facultative et utilise votre propre compte iCloud : nous n\'avons aucun serveur.'],
+      ],
+    },
+    faq: {
+      title: 'Questions fréquentes',
+      items: [
+        ['Qu\'est-ce que {app} ?', '{app} est une application iPhone et iPad pour les propriétaires qui louent des logements. Elle suit les encaissements par locataire et par mois, les dépenses, les quittances de loyer en PDF, la révision du loyer et les chiffres de la déclaration d\'impôts.'],
+        ['À qui s\'adresse-t-elle ?', 'Au petit propriétaire, d\'un à dix logements, en location classique, par chambre ou saisonnière. Elle ne convient pas à la location touristique.'],
+        ['Combien ça coûte ?', 'Le téléchargement est gratuit et permet jusqu\'à 3 logements, avec publicités. L\'abonnement mensuel supprime la limite et les publicités et ajoute les fonctions avancées. Le prix sera affiché sur l\'App Store ; il n\'y a pas d\'achat unique.'],
+        ['Où sont stockées mes données ?', 'Sur votre appareil. La synchronisation iCloud est facultative et passe par votre compte iCloud, pas par un serveur à nous. Vous pouvez aussi enregistrer une sauvegarde dans un fichier.'],
+        ['Fonctionne-t-elle hors d\'Espagne ?', 'L\'application existe en neuf langues et les encaissements, les dépenses, les quittances et le résumé servent dans n\'importe quel pays. L\'onglet Fiscal suit les règles de l\'impôt sur le revenu espagnol.'],
+        ['Calcule-t-elle ma déclaration d\'impôts ?', 'Elle calcule les chiffres du rendement de chaque logement selon les règles espagnoles. Elle ne dépose pas la déclaration et ne remplace pas un conseiller : confirmez les chiffres auprès de l\'administration fiscale espagnole.'],
+        ['Établit-elle des quittances de loyer ?', 'Oui. Elle crée une quittance PDF avec le loyer et les charges sur des lignes séparées, comme le demande l\'article 17.4 de la loi espagnole sur les baux urbains. Elle est incluse dans l\'abonnement.'],
+        ['Quand sera-t-elle sur l\'App Store ?', 'Elle n\'est pas encore publiée. Quand elle le sera, cette page portera le lien de téléchargement.'],
+      ],
+    },
+    close: { title: 'Vos locations, en ordre.', lede: 'Elle n\'est pas encore sur l\'App Store.' },
+  },
+};

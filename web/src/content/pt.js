@@ -1,0 +1,82 @@
+// Portuguese (Brazil) copy (home page, navigation and footer). The tool pages and legal pages exist in Spanish and English only.
+export default {
+  dir: 'ltr',
+  summary: '{app} é um app para iPhone e iPad para proprietários que alugam imóveis: aluguel tradicional, por quartos e de temporada. Acompanha as cobranças por inquilino e por mês, as despesas com seus vencimentos, o resumo de receitas e lucro, recibos de aluguel em PDF, o reajuste anual do aluguel com o IRAV ou o IPC, a caução e uma aba Fiscal para o imposto de renda espanhol (depreciação de 3 %, reduções de 50 % a 90 %, renda imputada pelos dias sem locação). Os dados ficam no aparelho; a sincronização com o iCloud é opcional. Nove idiomas. Grátis até 3 imóveis, com anúncios; a assinatura mensal remove o limite e os anúncios. Ainda não está na App Store. Ferramenta informativa, não é consultoria fiscal nem jurídica.',
+  llms: { app: 'O app', tools: 'Ferramentas gratuitas', legal: 'Legal e suporte', other: 'Outros idiomas', store: 'App Store' },
+  featureList: ['Cobranças por inquilino e por mês, com os atrasos à vista', 'Despesas com vencimentos e marca de pago', 'Resumo mensal, trimestral e anual', 'Recibos de aluguel em PDF (art. 17.4 LAU)', 'Reajuste do aluguel com IRAV ou IPC e carta de notificação', 'Aba Fiscal para o imposto espanhol: depreciação, reduções e renda imputada', 'Widget das cobranças do mês', 'Dados no aparelho e sincronização opcional com o iCloud', 'Nove idiomas'],
+  ui: {
+    skip: 'Ir para o conteúdo',
+    nav: { app: 'O app', plans: 'Planos', faq: 'Perguntas' },
+    langLabel: 'Idioma',
+    soon: 'Em breve na App Store',
+    soonShort: 'Em breve',
+    seeApp: 'Ver o app',
+    download: 'Baixar na App Store',
+    downloadShort: 'Baixar',
+    updated: 'Atualizado',
+    cta: { text: 'As mesmas contas, com seus imóveis e inquilinos salvos, no seu iPhone.' },
+    footer: {
+      project: 'Um app para proprietários de imóveis alugados. Seus dados ficam no seu aparelho.',
+      publisher: 'Editor', legal: 'Legal', privacy: 'Privacidade', terms: 'Termos', support: 'Suporte', languages: 'Idiomas',
+      disclaimer: '{app} é uma ferramenta informativa. Os números dependem do que você informa e das regras em vigor a cada ano; não são consultoria fiscal nem jurídica. Confirme sempre com a Agência Tributária espanhola ou com seu consultor.',
+    },
+  },
+  home: {
+    meta: {
+      title: '{app}: app para proprietários, cobranças e imposto do aluguel',
+      description: 'Um app para iPhone para proprietários: veja quem pagou, acompanhe as despesas de cada imóvel, emita recibos de aluguel e obtenha os números da declaração de imposto espanhola.',
+    },
+    h1: 'App para proprietários: quem pagou e o que declarar.',
+    lede: '{app} reúne as cobranças do mês, as despesas, os recibos em PDF e os números fiscais dos seus aluguéis.',
+    caption: 'O percurso de um proprietário, captado no simulador do iOS com a carteira de exemplo do app.',
+    gifAlt: 'Percurso pelo app: o resumo do mês, as cobranças de cada inquilino com um atraso marcado, a matriz do ano, um recibo de aluguel e a aba Fiscal.',
+    app: {
+      title: 'O app, tela por tela',
+      lede: 'Oito telas reais, captadas no simulador do iOS com a carteira de exemplo do app. Os imóveis, os inquilinos e os valores são fictícios.',
+      views: [
+        { file: 'summary', caption: 'Resumo do mês', alt: 'Tela Resumo com o lucro líquido do mês, o recebido, as despesas e o pendente' },
+        { file: 'chart', caption: 'Receitas e despesas', alt: 'Gráfico mensal de barras com as receitas recebidas e as despesas, e a ocupação por imóvel' },
+        { file: 'homes', caption: 'Imóveis e quartos', alt: 'Lista de imóveis com uma caixa por quarto: recebida ou em atraso' },
+        { file: 'collections', caption: 'Cobranças do mês', alt: 'Lista de inquilinos com o valor recebido e a data, e os atrasos marcados em vermelho' },
+        { file: 'year', caption: 'O ano em uma matriz', alt: 'Matriz de doze meses por inquilino com cada cobrança marcada' },
+        { file: 'receipt', caption: 'Recibo de aluguel em PDF', alt: 'Prévia de um recibo de aluguel com o aluguel e as despesas em linhas separadas' },
+        { file: 'expenses', caption: 'Despesas e vencimentos', alt: 'Despesas do mês com o que está pago, o pendente e o vencido' },
+        { file: 'tax', caption: 'Fiscal: rendimento líquido reduzido', alt: 'Aba Fiscal com receitas, despesas dedutíveis, depreciação, redução e rendimento líquido reduzido' },
+      ],
+    },
+    ledger: {
+      title: 'O aluguel de cada mês, com um toque.',
+      text: 'Marque cada cobrança e o que falta fica à vista, por inquilino e por quarto. O ano inteiro cabe em uma matriz de doze meses.',
+      alt: 'Matriz anual de cobranças: uma linha por inquilino e uma coluna por mês, com as caixas pagas marcadas',
+    },
+    tax: {
+      title: 'O imposto do aluguel, calculado.',
+      text: 'A aba Fiscal soma as receitas, subtrai as despesas dedutíveis e a depreciação de 3 %, aplica a redução de cada contrato (50 % ou 60 % conforme a data, 70 % ou 90 % onde couber) e mostra o rendimento líquido reduzido. Também imputa renda pelos dias sem locação.',
+      note: 'Segue as regras do imposto de renda espanhol. É uma ferramenta informativa: confirme os números com a Agência Tributária espanhola ou com seu consultor.',
+      alt: 'Aba Fiscal com o rendimento líquido reduzido do ano e o detalhe de receitas, despesas e reduções',
+    },
+    plans: {
+      title: 'O que é grátis e o que a assinatura inclui',
+      lede: 'Dois planos e nenhuma compra avulsa.',
+      rows: [
+        ['Grátis', 'Até 3 imóveis com seus quartos, cobranças, despesas, Resumo, widget, backup em arquivo e rendimento líquido em Fiscal. Com anúncios.'],
+        ['{app} Cloud, assinatura mensal', 'Imóveis ilimitados, dados do administrador e do contrato, reajuste com IRAV ou IPC e carta, recibos em PDF, depreciação e reduções em Fiscal, exportação em PDF e CSV, alertas, sem anúncios e sincronização com o iCloud. O preço será mostrado na App Store.'],
+        ['Seus dados', 'Ficam no seu aparelho. A sincronização com o iCloud é opcional e usa a sua própria conta do iCloud: não existe servidor nosso.'],
+      ],
+    },
+    faq: {
+      title: 'Perguntas frequentes',
+      items: [
+        ['O que é o {app}?', 'O {app} é um app para iPhone e iPad para proprietários que alugam imóveis. Acompanha as cobranças por inquilino e por mês, as despesas, os recibos de aluguel em PDF, o reajuste do aluguel e os números da declaração de imposto.'],
+        ['Para quem é?', 'Para o pequeno proprietário, de um a dez imóveis, com aluguel tradicional, por quartos ou de temporada. Não é para aluguel de curta temporada turística.'],
+        ['Quanto custa?', 'O download é grátis e permite até 3 imóveis, com anúncios. A assinatura mensal remove o limite e os anúncios e acrescenta as funções avançadas. O preço será mostrado na App Store; não há compra única.'],
+        ['Onde ficam meus dados?', 'No seu aparelho. A sincronização com o iCloud é opcional e usa a sua conta do iCloud, não um servidor nosso. Você também pode salvar um backup em arquivo.'],
+        ['Funciona fora da Espanha?', 'O app existe em nove idiomas e as cobranças, as despesas, os recibos e o resumo servem em qualquer país. A aba Fiscal segue as regras do imposto de renda espanhol.'],
+        ['Calcula a minha declaração de imposto?', 'Calcula os números do rendimento de cada imóvel pelas regras espanholas. Não entrega a declaração nem substitui um consultor: confirme os dados com a Agência Tributária espanhola.'],
+        ['Emite recibos de aluguel?', 'Sim. Cria um recibo em PDF com o aluguel e as despesas em linhas separadas, como pede o artigo 17.4 da lei espanhola de locações urbanas. Está incluído na assinatura.'],
+        ['Quando estará na App Store?', 'Ainda não foi publicado. Quando for, esta página terá o link para baixar.'],
+      ],
+    },
+    close: { title: 'Seus aluguéis, em ordem.', lede: 'Ainda não está na App Store.' },
+  },
+};
